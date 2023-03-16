@@ -16,7 +16,7 @@ const SideBar = () => {
       <SideBarIcon
         icon={<FaSolidCode size="28" /> }
         text="Source Code"
-        link="https://github.com/jmwinemiller/jwinemiller.github.io"
+        link="https://github.com/jmwinemiller/jmwinemiller.github.io"
       />
       <Divider />
       <SideBarIcon
