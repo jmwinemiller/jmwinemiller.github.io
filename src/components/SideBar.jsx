@@ -1,10 +1,10 @@
 import { SiIndeed, SiRstudio, SiUpwork} from "solid-icons/si"
 import {
-  FaBrandsGithub,
-  FaBrandsKaggle,
-  FaBrandsLinkedin,
-  FaRegularFilePdf,
-  FaSolidCode
+    FaBrandsDropbox,
+    FaBrandsGithub,
+    FaBrandsKaggle,
+    FaBrandsLinkedin,
+    FaSolidCode
 } from "solid-icons/fa"
 import {FiMail} from "solid-icons/fi";
 import {CgWebsite} from "solid-icons/cg";
@@ -57,7 +57,7 @@ const SideBar = () => {
       />
       <Divider />
       <SideBarIcon
-        icon={<FaRegularFilePdf />}
+        icon={<FaBrandsDropbox />}
         text="Resume"
         link="https://www.dropbox.com/s/ze3qrhcb1qq5bdi/JordanWinemiller_Resume.pdf?dl=0"
       />
