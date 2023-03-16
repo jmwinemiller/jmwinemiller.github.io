@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Data Science Portfolio Website",
   "author": "Jordan Winemiller",
-  "homepage": "https://jmwinemiller.github.io",
+  "homepage": "https://jwinemiller.github.io",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/ --ext .jsx",
