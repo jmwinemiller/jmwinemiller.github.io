@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-website",
+  "version": "0.0.0",
+  "description": "Data Science Portfolio Website",
+  "author": "Jordan Winemiller",
+  "homepage": "https://jmwinemiller.github.io",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/ --ext .jsx",
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-plugin-solid": "^0.11.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.1",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.8.0",
+    "gh-pages": "^5.0.0",
+    "solid-icons": "^1.0.4",
+    "solid-js": "^1.6.10"
+  }
+}

@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto
+    bg-gray-400 hover:bg-blue-600 dark:bg-gray-800 text-blue-500
+    hover:text-white hover:rounded-xl rounded-3xl transition-all duration-300
+    ease-linear cursor-pointer shadow-lg;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
+    text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0
+    origin-left;
+  }
+
+  .sidebar-hr {
+    @apply bg-gray-200 dark:bg-gray-800 border border-gray-200
+    dark:border-gray-800 rounded-full mx-2;
+  }
+
+  .content-container {
+    @apply flex flex-col bg-gray-200 dark:bg-gray-600 m-0 text-6xl pt-8
+    text-gray-900 h-screen w-screen overflow-hidden dark:text-gray-200
+    items-center;
+  }
+
+  .top-navigation {
+    @apply flex flex-row items-center bg-gray-300
+    dark:bg-gray-700 bg-opacity-90 w-full h-16 m-0 shadow-lg;
+  }
+
+  .top-navigation-icon {
+    @apply text-gray-900 mr-3 ml-3 p-1 transition duration-300 ease-in-out
+    hover:bg-blue-500 hover:text-white hover:rounded-md dark:text-white
+    dark:hover:text-white dark:hover:bg-gray-800 cursor-pointer font-bold
+    text-lg font-semibold;
+  }
+
+  .top-navigation-icon-main {
+    @apply text-gray-900 mr-3 ml-4 p-2 transition duration-300 ease-in-out
+    hover:bg-blue-500 hover:text-white hover:rounded-md dark:text-white
+    dark:hover:text-white dark:hover:bg-gray-800 cursor-pointer font-bold
+    text-3xl font-semibold;
+  }
+
+  .top-navigation-dark-icon {
+    @apply flex mr-3 ml-4 duration-300 ease-in-out cursor-pointer
+    dark:hover:text-blue-400 hover:rounded-xl rounded-3xl
+    dark:hover:bg-amber-200 transition text-blue-500 hover:text-white
+    bg-gray-400 hover:bg-blue-600 dark:text-yellow-300;
+  }
+
+  .counter-example {
+    @apply rounded-full hover:rounded-3xl bg-blue-500 text-gray-900
+    hover:text-white hover:bg-blue-600 m-4 p-4 dark:bg-gray-800
+    dark:text-blue-500 dark:hover:text-white;
+  }
+}
