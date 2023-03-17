@@ -13,7 +13,7 @@ const Resume_CV = lazy(() => import("./routes/Resume_CV"))
 
 function App() {
   return (
-    <div class="ml-16">
+    <div class="main-layout">
       <TopNavigation />
       <SideBar />
       <Routes>

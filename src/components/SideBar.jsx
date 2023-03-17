@@ -71,7 +71,7 @@ const SideBar = () => {
 
 const SideBarIcon = (props) => (
   <div class="sidebar-icon group" >
-    <a href={props.link}>
+    <a target="_blank" href={props.link}>
       {props.icon}
     </a>
     <span class="sidebar-tooltip group-hover:scale-100">

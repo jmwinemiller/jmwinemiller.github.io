@@ -10,6 +10,10 @@
 }
 
 @layer components {
+  .main-layout {
+    @apply ml-8 lg:ml-16
+  }
+
   .sidebar-layout {
     @apply fixed flex flex-col top-0 left-0 shadow-lg h-screen w-9 lg:w-16
     bg-white dark:bg-gray-900;
@@ -35,14 +39,15 @@
   }
 
   .content-container {
-    @apply flex flex-col bg-gray-200 dark:bg-gray-600 m-0 text-6xl pt-8
-    text-gray-900 h-screen w-screen overflow-hidden dark:text-gray-200
-    items-center;
+    @apply flex flex-col overflow-hidden items-center bg-gray-200 text-gray-900
+    dark:bg-gray-600 dark:text-gray-200 h-screen w-screen lg:w-auto text-sm m-0
+    p-4 lg:text-6xl lg:pt-8;
   }
 
   .top-navigation {
-    @apply flex flex-row items-center bg-gray-300
-    dark:bg-gray-700 bg-opacity-90 w-screen h-16 m-0 shadow-lg;
+    @apply flex flex-row items-center justify-evenly lg:justify-start pr-10
+    bg-gray-300 dark:bg-gray-700 bg-opacity-90 w-screen lg:w-auto h-9 lg:h-16
+    m-0 shadow-lg;
   }
 
   .top-navigation-icon {
@@ -50,12 +55,12 @@
     font-semibold mr-1 ml-1 p-0 text-xs hover:text-blue-500 lg:mr-3 lg:ml-3
     lg:p-1 lg:text-lg lg:hover:bg-blue-500 lg:hover:text-white
     lg:hover:rounded-lg lg:dark:text-white lg:dark:hover:text-white
-    lg:dark:hover:bg-gray-800;
+    lg:dark:hover:bg-gray-800 text-center;
   }
 
   .top-navigation-icon-main {
     @apply text-gray-900 transition-all duration-100 ease-in-out cursor-pointer
-    mr-1 mr-1 p-1 text-sm hover:text-blue-500 lg:mr-3 lg:ml-4 lg:p-2 lg:text-3xl
+    mr-1 ml-3 p-1 text-xs hover:text-blue-500 lg:mr-3 lg:ml-4 lg:p-2 lg:text-3xl
     lg:hover:bg-blue-500 lg:hover:text-white lg:hover:rounded-lg
     lg:dark:text-white lg:dark:hover:text-white lg:dark:hover:bg-gray-800
     font-semibold;
