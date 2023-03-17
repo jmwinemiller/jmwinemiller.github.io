@@ -11,47 +11,46 @@ import {CgWebsite} from "solid-icons/cg";
 
 const SideBar = () => {
   return (
-    <div class="fixed top-0 left-0 h-screen w-16 flex flex-col bg-white
-                  dark:bg-gray-900 shadow-lg">
+    <div class="sidebar-layout">
       <SideBarIcon
-        icon={<FaSolidCode size="28" /> }
+        icon={<FaSolidCode /> }
         text="Source Code"
         link="https://github.com/jmwinemiller/jmwinemiller.github.io"
       />
       <Divider />
       <SideBarIcon
-          icon={<FaBrandsLinkedin size="28" />}
+          icon={<FaBrandsLinkedin />}
           text="Linkedin"
           link="https://www.linkedin.com/in/jordan-winemiller" />
       <SideBarIcon
-        icon={<FaBrandsGithub size="28" />}
+        icon={<FaBrandsGithub />}
         text="Github"
         link="https://github.com/jmwinemiller"
       />
       <SideBarIcon
-        icon={<FaBrandsKaggle size="28" />}
+        icon={<FaBrandsKaggle />}
         text="Kaggle"
         link="https://www.kaggle.com/jmwinemiller"
       />
       <Divider />
       <SideBarIcon
-        icon={<SiRstudio size="28" />}
+        icon={<SiRstudio />}
         text="RPubs"
         link="https://rpubs.com/jwinemiller"
       />
       <SideBarIcon
-        icon={<CgWebsite size="28" />}
+        icon={<CgWebsite />}
         text="Shiny Website"
         link="https://jwinemiller.shinyapps.io/Presentation"
       />
       <Divider />
       <SideBarIcon
-        icon={<SiUpwork size="28" />}
+        icon={<SiUpwork />}
         text="Upwork"
         link="https://www.upwork.com/freelancers/~01c72f3181dddf810d"
       />
       <SideBarIcon
-        icon={<SiIndeed size="28" />}
+        icon={<SiIndeed />}
         text="Indeed Resume"
         link="https://my.indeed.com/p/jordanw-yy874yz"
       />
@@ -62,7 +61,7 @@ const SideBar = () => {
         link="https://www.dropbox.com/s/ze3qrhcb1qq5bdi/JordanWinemiller_Resume.pdf?dl=0"
       />
       <SideBarIcon
-        icon={<FiMail size="28" />}
+        icon={<FiMail />}
         text="Email Contact"
         link="mailto:jordanwinemiller@gmail.com"
       />

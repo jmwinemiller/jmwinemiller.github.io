@@ -10,11 +10,17 @@
 }
 
 @layer components {
+  .sidebar-layout {
+    @apply fixed flex flex-col top-0 left-0 shadow-lg h-screen w-9 lg:w-16
+    bg-white dark:bg-gray-900;
+  }
+
   .sidebar-icon {
-    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto
-    bg-gray-400 hover:bg-blue-600 dark:bg-gray-800 text-blue-500
-    hover:text-white hover:rounded-xl rounded-3xl transition-all duration-300
-    ease-linear cursor-pointer shadow-lg;
+    @apply relative flex items-center justify-center text-blue-500 bg-gray-400
+    hover:bg-blue-600 hover:text-white dark:bg-gray-800 transition-all
+    duration-100 ease-linear cursor-pointer shadow-lg h-7 w-7 mt-1 mb-1 text-lg
+    rounded-full hover:rounded-lg lg:h-12 lg:w-12 lg:mt-2 lg:mb-2 lg:text-3xl
+    lg:rounded-3xl lg:hover:rounded-xl mx-auto;
   }
 
   .sidebar-tooltip {
@@ -40,24 +46,32 @@
   }
 
   .top-navigation-icon {
-    @apply text-gray-900 mr-3 ml-3 p-1 transition duration-300 ease-in-out
-    hover:bg-blue-500 hover:text-white hover:rounded-md dark:text-white
-    dark:hover:text-white dark:hover:bg-gray-800 cursor-pointer font-bold
-    text-lg font-semibold;
+    @apply text-gray-900 transition-all duration-100 ease-in-out cursor-pointer
+    font-semibold mr-1 ml-1 p-0 text-xs hover:text-blue-500 lg:mr-3 lg:ml-3
+    lg:p-1 lg:text-lg lg:hover:bg-blue-500 lg:hover:text-white
+    lg:hover:rounded-lg lg:dark:text-white lg:dark:hover:text-white
+    lg:dark:hover:bg-gray-800;
   }
 
   .top-navigation-icon-main {
-    @apply text-gray-900 mr-3 ml-4 p-2 transition duration-300 ease-in-out
-    hover:bg-blue-500 hover:text-white hover:rounded-md dark:text-white
-    dark:hover:text-white dark:hover:bg-gray-800 cursor-pointer font-bold
-    text-3xl font-semibold;
+    @apply text-gray-900 transition-all duration-100 ease-in-out cursor-pointer
+    mr-1 mr-1 p-1 text-sm hover:text-blue-500 lg:mr-3 lg:ml-4 lg:p-2 lg:text-3xl
+    lg:hover:bg-blue-500 lg:hover:text-white lg:hover:rounded-lg
+    lg:dark:text-white lg:dark:hover:text-white lg:dark:hover:bg-gray-800
+    font-semibold;
   }
 
-  .top-navigation-dark-icon {
-    @apply flex mr-3 ml-4 duration-300 ease-in-out cursor-pointer
-    dark:hover:text-blue-400 hover:rounded-xl rounded-3xl
-    dark:hover:bg-amber-200 transition text-blue-500 hover:text-white
-    bg-gray-400 hover:bg-blue-600 dark:text-yellow-300;
+  .dark-mode-layout {
+    @apply fixed right-0 top-0;
+  }
+
+  .dark-mode-icon {
+    @apply flex transition-all duration-100 ease-in-out cursor-pointer
+    dark:text-yellow-300 dark:hover:text-blue-400 dark:hover:bg-amber-200
+    bg-gray-400 text-blue-500 hover:bg-blue-600 hover:text-white rounded-full
+    hover:rounded-lg text-lg h-7 w-7 mt-1 mb-1 mr-1 ml-2 lg:mr-3 lg:ml-4
+    lg:hover:rounded-xl lg:rounded-3xl lg:text-4xl lg:h-12 lg:w-12 lg:mt-2
+    lg:mb-2 mx-auto items-center justify-center;
   }
 
   .counter-example {

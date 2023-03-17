@@ -10,7 +10,7 @@ const TopNavigation = () => {
       <A class="top-navigation-icon" href="/about">About Me</A>
       <A class="top-navigation-icon" href="/resume_cv">Resume/CV</A>
       <A class="top-navigation-icon" href="/counter">Counter Example</A>
-      <span class="fixed right-0.5">
+      <span class="dark-mode-layout">
         <UseDarkMode />
       </span>
     </div>

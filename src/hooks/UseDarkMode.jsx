@@ -30,12 +30,12 @@ const UseDarkMode = () => {
   });
 
   return (
-    <div id="theme-actions" class="top-navigation-dark-icon group">
+    <div id="theme-actions" class="dark-mode-icon group">
       <span onClick={() => setTheme((t) => (t === "light" ? "dark" : "light"))}>
         {theme() === "dark" ? (
-          <WiDaySunny size="36" />
+          <WiDaySunny />
         ) : (
-          <WiMoonWaningCrescent3 size="36" />
+          <WiMoonWaningCrescent3 />
         )}
       </span>
     </div>
