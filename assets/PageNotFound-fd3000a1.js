@@ -1,0 +1,1 @@
+import{i as e,b as n,A as o,t as a}from"./index-be56ed1d.js";const r=a('<div id="PageNotFound" class="content-container">Page Not Found</div>',2),l=()=>(()=>{const t=r.cloneNode(!0);return t.firstChild,e(t,n(o,{href:"/",class:"page-not-found-link",children:"Return to Home Page"}),null),t})();export{l as default};
