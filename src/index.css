@@ -15,7 +15,7 @@
   }
 
   .sidebar-layout {
-    @apply fixed flex flex-col top-0 left-0 shadow-lg h-screen w-9 lg:w-16
+    @apply fixed flex flex-col top-0 left-0 shadow-lg h-full w-9 lg:w-16
     bg-white dark:bg-gray-900;
   }
 
@@ -40,14 +40,18 @@
 
   .content-container {
     @apply flex flex-col overflow-hidden items-center bg-gray-200 text-gray-900
-    dark:bg-gray-600 dark:text-gray-200 h-screen w-screen lg:w-auto text-sm m-0
-    p-4 lg:text-6xl lg:pt-8;
+    dark:bg-gray-600 dark:text-gray-200 h-full min-h-screen w-screen lg:w-auto
+    text-sm m-0 p-4 lg:text-6xl lg:pt-8;
+  }
+
+  .content-container-title {
+    @apply mb-5 font-semibold text-3xl lg:text-6xl;
   }
 
   .top-navigation {
-    @apply flex flex-row items-center justify-evenly lg:justify-start pr-10
-    bg-gray-300 dark:bg-gray-700 bg-opacity-90 w-screen lg:w-auto h-9 lg:h-16
-    m-0 shadow-lg;
+    @apply sticky top-0 flex flex-row items-center justify-evenly
+    lg:justify-start pr-10 bg-gray-300 dark:bg-gray-700 bg-opacity-90 w-screen
+    lg:w-auto h-9 lg:h-16 m-0 shadow-lg;
   }
 
   .top-navigation-icon {
@@ -55,7 +59,7 @@
     font-semibold mr-1 ml-1 p-0 text-xs hover:text-blue-500 lg:mr-3 lg:ml-3
     lg:p-1 lg:text-lg lg:hover:bg-blue-500 lg:hover:text-white
     lg:hover:rounded-lg lg:dark:text-white lg:dark:hover:text-white
-    lg:dark:hover:bg-gray-800 text-center;
+    lg:dark:hover:bg-gray-800 text-center dark:text-green-50;
   }
 
   .top-navigation-icon-main {
@@ -63,7 +67,7 @@
     mr-1 ml-3 p-1 text-xs hover:text-blue-500 lg:mr-3 lg:ml-4 lg:p-2 lg:text-3xl
     lg:hover:bg-blue-500 lg:hover:text-white lg:hover:rounded-lg
     lg:dark:text-white lg:dark:hover:text-white lg:dark:hover:bg-gray-800
-    font-semibold;
+    font-semibold dark:text-gray-50;
   }
 
   .dark-mode-layout {
@@ -79,13 +83,52 @@
     lg:mb-2 mx-auto items-center justify-center;
   }
 
-  .counter-example {
-    @apply rounded-full hover:rounded-3xl bg-blue-500 text-gray-900
-    hover:text-white hover:bg-blue-600 m-4 p-4 dark:bg-gray-800
-    dark:text-blue-500 dark:hover:text-white;
+  .portfolio-layout {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16;
+  }
+
+  .portfolio-post {
+    @apply flex justify-center;
+  }
+
+  .portfolio-card {
+    @apply block max-w-sm lg:max-w-lg rounded-lg bg-white shadow-lg
+    dark:bg-gray-700;
+  }
+
+  .portfolio-card-image {
+    @apply rounded-t-lg;
+  }
+
+  .portfolio-card-info {
+    @apply p-4;
+  }
+
+  .portfolio-card-title {
+    @apply mb-2 text-xl font-medium leading-tight text-gray-800
+    dark:text-gray-50;
+  }
+
+  .portfolio-card-description {
+    @apply mb-4 text-base text-gray-600 dark:text-gray-200;
+  }
+
+  .portfolio-card-tags {
+    @apply inline-block bg-gray-400 rounded-full px-3 py-1 text-sm
+    font-semibold text-gray-800 mr-2 mb-2;
+  }
+
+  .portfolio-card-date {
+    @apply text-sm text-gray-400 mt-8;
   }
 
   .page-not-found-link {
     @apply underline text-blue-500 text-lg mt-8 lg:text-4xl lg:mt-5;
+  }
+
+  .counter-example {
+    @apply rounded-full hover:rounded-3xl bg-blue-500 text-gray-900
+    hover:text-white hover:bg-blue-600 m-4 p-4 dark:bg-gray-800
+    dark:text-blue-500 dark:hover:text-white;
   }
 }

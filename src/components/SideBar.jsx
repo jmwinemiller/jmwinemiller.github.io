@@ -6,8 +6,8 @@ import {
     FaBrandsLinkedin,
     FaSolidCode
 } from "solid-icons/fa"
-import {FiMail} from "solid-icons/fi";
-import {CgWebsite} from "solid-icons/cg";
+import { FiMail } from "solid-icons/fi";
+import { CgWebsite } from "solid-icons/cg";
 
 const SideBar = () => {
   return (
