@@ -9,6 +9,7 @@ const Blog = lazy(() => import("./routes/Blog"));
 const Counter = lazy(() => import("./routes/Counter"));
 const Home = lazy(() => import("./routes/Home"));
 const Portfolio = lazy(() => import("./routes/Portfolio"));
+const PageNotFound = lazy(() => import("./routes/PageNotFound"))
 const Resume_CV = lazy(() => import("./routes/Resume_CV"))
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/counter" component={Counter} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/resume_cv" component={Resume_CV} />
+        <Route path="*" component={PageNotFound} />
       </Routes>
     </div>
   );

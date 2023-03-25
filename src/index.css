@@ -84,4 +84,8 @@
     hover:text-white hover:bg-blue-600 m-4 p-4 dark:bg-gray-800
     dark:text-blue-500 dark:hover:text-white;
   }
+
+  .page-not-found-link {
+    @apply underline text-blue-500 text-lg mt-8 lg:text-4xl lg:mt-5;
+  }
 }
