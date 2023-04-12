@@ -42,7 +42,7 @@ const Resume_CV = () => {
           />}
         </For>
         <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-          <div class="h-full w-1 bg-indigo-300"></div>
+          <div class="h-full w-1 bg-indigo-300" />
           <div class="absolute w-6 h-6 rounded-full bg-indigo-400 z-10 text-gray-50
                   text-center text-sm">1</div>
         </div>
@@ -54,7 +54,7 @@ const Resume_CV = () => {
 const ProjectExperience = (props) => (
   <div class="resume-post">
     <div class="resume-card">
-      <span className="text-base">
+      <span class="text-base">
       <span class="resume-card-title">{props.job_title}</span>
         <p class="text-base">{props.city}</p></span>
       <p class="resume-card-subtitle">{props.company} - {props.department}</p>
@@ -67,18 +67,18 @@ const ProjectExperience = (props) => (
         </For>
       </div>
       <div id="research-list">
-        <div className="resume-card-list-title">Research</div>
+        <div class="resume-card-list-title">Research</div>
         <For each={props.research_list}>
           {research =>
-            <li className="resume-card-list">{research}</li>
+            <li class="resume-card-list">{research}</li>
           }
         </For>
       </div>
       <div id="responsibility-list">
-        <div className="resume-card-list-title">Key Responsibilities</div>
+        <div class="resume-card-list-title">Key Responsibilities</div>
         <For each={props.responsibility_list}>
           {responibility =>
-            <li className="resume-card-list">{responibility}</li>
+            <li class="resume-card-list">{responibility}</li>
           }
         </For>
       </div>
@@ -89,14 +89,14 @@ const ProjectExperience = (props) => (
 const Experience = (props) => (
   <div class="resume-post">
     <div class="resume-card">
-      <span className="text-base">
+      <span class="text-base">
       <span class="resume-card-title">{props.job_title}</span>
         <p class="text-base">{props.city}</p></span>
       <p class="resume-card-subtitle">{props.company} - {props.department}</p>
       <div id="responsibility-list">
         <For each={props.responsibility_list}>
           {responibility =>
-            <li className="resume-card-list">{responibility}</li>
+            <li class="resume-card-list">{responibility}</li>
           }
         </For>
       </div>
