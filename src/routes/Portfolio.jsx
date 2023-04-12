@@ -7,8 +7,10 @@ const Portfolio = () => {
   return (
     <div id="Portfolio" class="content-container">
       <h3 class="content-container-title">Portfolio</h3>
-      <div id="portfolio-grid"
-           class="portfolio-layout">
+      <h5 class="content-container-subtitle">
+        Currently migrating projects to Github
+      </h5>
+      <div id="portfolio-grid" class="portfolio-layout">
         <For each={posts()}>
           {post => <PortfolioPost
             name={post.name}
@@ -29,7 +31,7 @@ const Portfolio = () => {
 const PortfolioPost = (props) => (
   <div class="portfolio-post">
     <div class="portfolio-card">
-      <a href={props.link}>
+      <a href={props.link} target="_blank">
       <img
         class="portfolio-card-image"
         src={props.image}
