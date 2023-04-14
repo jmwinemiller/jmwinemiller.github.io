@@ -19,11 +19,11 @@ function App() {
       <SideBar />
       <Routes>
         <Route path="/" component={Home} />
-        <Route path="/#about" component={About} />
-        <Route path="/#blog" component={Blog} />
-        <Route path="/#counter" component={Counter} />
-        <Route path="/#portfolio" component={Portfolio} />
-        <Route path="/#resume_cv" component={Resume_CV} />
+        <Route path="/about" component={About} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/counter" component={Counter} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/resume_cv" component={Resume_CV} />
         <Route path="*" component={PageNotFound} />
       </Routes>
     </div>
